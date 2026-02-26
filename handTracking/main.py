@@ -25,7 +25,7 @@ while True:
                 cx, cy = int(lm.x * w), int(lm.y * h)
                 print(id, cx, cy)
                 if id == 0: # locate cx and cy for index 0 (wrist)
-                    cv2.circle(img, (cx, cy), 25, (255, 0, 0), cv2.FILLED)
+                    cv2.circle(img, (cx, cy), 10, (255, 0, 0), cv2.FILLED)
 
 
             mpdraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS) # draw 21 landmarks and connections line
